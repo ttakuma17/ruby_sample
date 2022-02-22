@@ -11,7 +11,6 @@ def putPointAndComment()
 			File.open("data.txt" , "a")  do |file|
 				file.puts(post)
 			end
-			# break
 		end
 end
 
