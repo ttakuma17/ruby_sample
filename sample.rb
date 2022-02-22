@@ -1,17 +1,17 @@
 posts = [];
 
 def putPointAndComment()
-		point = gets.to_i
-		if point <= 0 || point > 5
-			puts "1から5で入力してください"
-		else
-			puts "コメントを入力してください"
-			comment = gets
-			post = "ポイント: #{point} コメント: #{comment}"
-			File.open("data.txt" , "a")  do |file|
-				file.puts(post)
-			end
+	point = gets.to_i
+	if point <= 0 || point > 5
+		puts "1から5で入力してください"
+	else
+		puts "コメントを入力してください"
+		comment = gets
+		post = "ポイント: #{point} コメント: #{comment}"
+		File.open("data.txt" , "a")  do |file|
+			file.puts(post)
 		end
+	end
 end
 
 
