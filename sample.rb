@@ -33,7 +33,6 @@ while true
 	when 1
 		puts "1から5で評価を入力してください"
 		putPointAndComment()
-		break
 	when 2
 		puts "これまでの結果"
 		showBbsRecord()
